@@ -64,7 +64,7 @@ header {
     font-weight: 700;
     color: #193f37;
     border: none;
-    border-radius: 6px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 1.2em; 
     transition: transform .2s ease;
@@ -114,12 +114,14 @@ main {
     margin-top: 100px;
 }
 .p_name {
-    text-align: justify;
     hyphens: auto;
     font-size: 1.3em;
 }
 .p_name p {
     margin-top: 25px;
+}
+h3 {
+    margin-top: 20px;
 }
 .button_two button{
     padding: 25px 85px;
@@ -163,94 +165,6 @@ main {
     font-size: .9em;
     text-align: center;
 }
-/* SECTION BALLON */
-.sec_balloon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    height: 190px;
-    background-image: linear-gradient(#1c473f , #35927F);
-    color: white;
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-}
-.sec_balloon::before {
-    content: "";
-    position: absolute;
-    bottom: -38px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 40px solid #35927F;
-}
-.div_balloon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    font-weight: bold;
-}
-h2 {
-    margin-top: 5px;
-}
-/* SECTION THREE */
-.sec_three {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
-}
-h3 {
-    margin-top: 60px;
-    font-size: 1.3em;
-    font-style: oblique;
-}
-.button_buy button {
-    margin-top: 50px;
-    padding: 25px 85px;
-    background-color: #FDCF03;
-    font-weight: 700;
-    color: #193f37;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1.8em; 
-    transition: transform .2s ease;
-}
-.button_buy button:hover {
-    color: #266155;
-    transform: scale(1.03);
-}
-/* SECTION FOUR */
-.sec_four {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    background-color: #000000d0;
-    border-radius: 30px;
-    text-align: center;
-    width: 80%;
-}
-#guar {
-    width: 300px;
-}
-.div_guarantee {
-    padding: 30px;
-    text-align: justify;
-}
-#h3_guarantee {
-    margin-top: 0;
-    margin-bottom: 20px;
-    
-}
-.button_find_out {
-    display: none;
-}
 /* SECTION FIVE */
 .sec_five {
     display: flex;
@@ -263,8 +177,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .img_stars {
     margin-left: 15px;
@@ -286,7 +199,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 150px;
 }
 .div_footer_one {
     display: flex;
@@ -314,16 +227,21 @@ footer h4 a {
         display: none;
     }
     /* SECTION ONE */
+    main {
+        padding: 40px;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
     .sec_one {
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .imagem_cel {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
     }
     #a_cel {
         display: flex;
@@ -348,87 +266,31 @@ footer h4 a {
         margin-top: 15px;
         font-size: 0.8em;
     }
+    .p_off {
+        display: none;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
     .button_two button {
         padding: 25px 35px;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+        font-size: 1.5em;
     }
     /* SECTION TWO */
     .img_sec_two {
-        width: 80%;
-        height: auto;
+        width: 97%;
     }
     .p_certifications {
-        margin-top: 10px;
         font-size: .8em;
         text-align: center;
-    }
-    /* SECTION BALLOON */
-    .sec_balloon {
-        margin-top: 10px;
-    }
-    .div_balloon {
-        font-size: 1.5em;
-    }
-    h2 {
-        font-size: 0.8em;
-    }
-    /* SECTION THREE */
-    .sec_three {
-        margin-top: 10px;
-    }
-    h3 {
-        font-size: 0.8em;
-        margin-bottom: 20px;
-    }
-    .button_buy {
-        display: flex;
-        justify-content: center;
-    }
-    .button_buy button {
-        padding: 25px 80px;
-        font-size: 1.8em; 
-    }
-    /* SECTION FOUR */
-    .sec_four {
-        flex-direction: column;
-        background-color: #000000;
-    }
-    #guar {
-        width: 200px;
-    }
-    #h3_guarantee {
-        font-size: 1.2em;
-        text-align: center;
-        margin-top: -30px;
-    }
-    .button_find_out {
-        display: flex;
-        text-align: center;
-    }
-    .button_find_out button {
-        margin-top: 30px;
-        margin-bottom: 50px;
-        padding: 25px 55px;
-        width: 80%;
-        background-color: #FDCF03;
-        font-weight: 700;
-        color: #193f37;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        font-size: 1.2em; 
-        transition: transform .2s ease;
-    }
-    .button_Find_out button:hover {
-        color: #266155;
-        transform: scale(1.03);
     }
     /* SECTION FIVE */
     .stars {
         flex-direction: column;
-        font-size: .9em;
-        margin-top: 0px;
+        font-size: 1em;
+        margin-top: -50px;
         margin-bottom: 0px;
     }
     .img_stars {
@@ -438,7 +300,7 @@ footer h4 a {
     }
     /* SECTION FOOTER */
     .container_footer {
-        font-size: 0.5em;
+        font-size: 0.8em;
         height: 150px;
     }
     .div_footer_one {
@@ -450,7 +312,7 @@ footer h4 a {
 }
 @media (min-width: 769px) and (max-width: 1179px) {
     /* HEADER */
-    header {
+    .button_one {
         display: none;
     }
     .container_header {
@@ -458,6 +320,7 @@ footer h4 a {
         align-items: center;
         justify-content: center;
         font-size: .7em;
+        height: 70px;
     }
     .name_product h1 {
         margin-top: 40px;
@@ -489,12 +352,9 @@ footer h4 a {
         padding: 25px 85px;
         font-size: 1.8em; 
     }
-    .sec_four {
-        background-color: #00000086;
-    }
     /* SECTION FOOTER */
     .container_footer {
-        font-size: 0.9em;
+        font-size: 1.2em;
         height: 150px;
     }
     .div_footer_one {
